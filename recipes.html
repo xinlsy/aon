@@ -4,33 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="recipes.css">
+    <title>Xin-Recipes</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="icon" href="LogoTab.jpg">
+    <script src="action.js"></script>
 </head>
-<body>
-    <h1>RECIPES</h1>
-    <table>
-        <thead>
-            <th>Ingredients</th>
-            <th>Recipes</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Radish</td>
-                <td>
-                    <ul>
-                        <li>
-                            <img src="RadishCake.jpg" style="width:100px;height:50px">
-                            <a href=https://www.youtube.com/watch?v=biRXo9Gq87A&list=LL&index=1>Radish Cake (萝卜糕)</a>
-                        </li>
-                        <li>
-                            <img src="RadishKimchi.jpg" style="width:100px;height:50px">
-                            Kimchi
-                        </li>
-                    </ul>                   
-                </td>
-            </tr>
-        </tbody>
-    </table>
+
+<body class="recipe">
+    <h1 class="header">RECIPES</h1>
+    <div class="banner">
+        <a class="menu" href="main.html">Home</a>
+        <a class="menu" href="portfolio.html">Portfolio</a>
+    </div>
+
+    <div class="ingredient">
+        <h3>Ingredients</h3>
+            <ul class="ingredient_list">
+                <li style="cursor: pointer;" onclick="showRecipe('radish')">Radish</li>
+                <li style="cursor: pointer;" onclick="showRecipe('spring_onion')">Spring Onion</li>
+                <li style="cursor: pointer;" onclick="showRecipe('yoghurt')">Yoghurt</li>
+            </ul>
+    </div>
+
+    <div class="ingredient_recipe">
+        <h3>Recipes</h3>
+        <div id="radish" class="recipe_content">
+            <article class="recipe-matrix">
+                <figure class="recipe-image_box">
+                    <a href=https://www.youtube.com/watch?v=biRXo9Gq87A&list=LL&index=1><img class="recipe-image" src="RadishCake.jpg" style="width:200px;height:100px"></a>
+                </figure>
+                <div class="recipe-name_box">
+                    <h4>Radish Cake (萝卜糕)</h4>
+                    Recipe's 1:1.3 (flour water ration) is a bit dry > to explore 1:1.5 ratio 
+                </div>            
+            </article>
+            <article class="recipe-matrix">
+                <figure class="recipe-image_box">
+                    <img class="recipe-image" src="RadishKimchi.jpg" style="width:200px;height:100px">
+                </figure>
+                <div class="recipe-name_box">
+                    <h4>Kimchi</h4>
+                </div>            
+            </article>
+        </div>
+
+        <div id="spring_onion" class="recipe_content">
+            <article class="recipe-matrix">
+                <figure class="recipe-image_box">
+                    <a href=https://redhousespice.com/spring-onion-pancake/><img class="recipe-image" src="SpringOnionPancake.jpg" style="width:200px;height:120px"></a>
+                </figure>
+                <div class="recipe-name_box">
+                    <h4>Scallion Pancake (葱油饼) </h4>
+                </div>            
+            </article>
+        </div> 
+
+        <div id="yoghurt" class="recipe_content">
+            <article class="recipe-matrix">
+                <figure class="recipe-image_box">
+                    <a href=https://lovefoodies.com/creamy-chicken-stroganoff/><img class="recipe-image" src="YoghurtCreamySauce.jpg" style="width:200px;height:120px"></a>
+                </figure>
+                <div class="recipe-name_box">
+                    <h4>Creamy sauce for chicken </h4>
+                </div>            
+            </article>
+            <article class="recipe-matrix">
+                <figure class="recipe-image_box">
+                    <a href=ttps://www.lecremedelacrumb.com/greek-yogurt-alfredo-sauce/><img class="recipe-image" src="YoghurtAlfredoSauce.jpg" style="width:200px;height:160px"></a>
+                </figure>
+                <div class="recipe-name_box">
+                    <h4>Alfredo sauce for Pasta  </h4>
+                </div>            
+            </article>                  
+        </div>              
+    </div>
+
 </body>
 </html>
+
