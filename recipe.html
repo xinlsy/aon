@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xin-Recipes</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="icon" href="LogoTab.jpg">
+    <script src="action.js"></script>
+</head>
+
+<body class="recipe">
+    <div class="page-content">
+        <div class="sect1-header">
+            <h1>RECIPES</h1>
+        </div>
+        
+        <div class="sect2-banner">
+            <a class="menu" href="main.html">Home</a>
+            <a class="menu" href="portfolio.html">Portfolio</a>
+        </div>
+
+        <div class="sect3-ingredient">
+            <div class="ingredient-box" style="cursor: pointer;" onclick="showRecipe('radish')">Radish</div>
+            <div class="ingredient-box" style="cursor: pointer;" onclick="showRecipe('spring_onion')">Spring Onion</div>
+            <div class="ingredient-box" style="cursor: pointer;" onclick="showRecipe('yoghurt')">Yoghurt</div>
+        </div>
+
+        <div class="sect4-recipe">
+            <h3>Recipes</h3>
+            <div id="radish" class="recipe_content">
+                <article class="recipe-matrix">
+                    <figure class="recipe-image_box">
+                        <a href=https://www.youtube.com/watch?v=biRXo9Gq87A&list=LL&index=1><img class="recipe-image" src="RecipeRadishCake.jpg" style="width:200px;height:100px"></a>
+                    </figure>
+                    <div class="recipe-name_box">
+                        <h4>Radish Cake (萝卜糕)</h4>
+                        <p class="recipe-name_notes">Recipe's 1:1.3 (flour water ration) is a bit dry > to explore 1:1.5 ratio </p>
+                    </div>            
+                </article>
+                <article class="recipe-matrix">
+                    <figure class="recipe-image_box">
+                        <img class="recipe-image" src="RecipeRadishKimchi.jpg" style="width:200px;height:100px">
+                    </figure>
+                    <div class="recipe-name_box">
+                        <h4>Kimchi</h4>
+                    </div>            
+                </article>
+            </div>
+
+            <div id="spring_onion" class="recipe_content">
+                <article class="recipe-matrix">
+                    <figure class="recipe-image_box">
+                        <a href=https://redhousespice.com/spring-onion-pancake/><img class="recipe-image" src="RecipeSpringOnionPancake.jpg" style="width:200px;height:120px"></a>
+                    </figure>
+                    <div class="recipe-name_box">
+                        <h4>Scallion Pancake (葱油饼) </h4>
+                        <p class="recipe-name_notes">Roll tightly so that oil does not ooze out when flattening it flat</p>
+                    </div>            
+                </article>
+            </div> 
+
+            <div id="yoghurt" class="recipe_content">
+                <article class="recipe-matrix">
+                    <figure class="recipe-image_box">
+                        <a href=https://lovefoodies.com/creamy-chicken-stroganoff/><img class="recipe-image" src="RecipeYoghurtCreamySauce.jpg" style="width:200px;height:120px"></a>
+                    </figure>
+                    <div class="recipe-name_box">
+                        <h4>Creamy sauce for chicken </h4>
+                    </div>            
+                </article>
+                <article class="recipe-matrix">
+                    <figure class="recipe-image_box">
+                        <a href=https://www.lecremedelacrumb.com/greek-yogurt-alfredo-sauce/><img class="recipe-image" src="RecipeYoghurtAlfredoSauce.jpg" style="width:200px;height:160px"></a>
+                    </figure>
+                    <div class="recipe-name_box">
+                        <h4>Alfredo sauce for Pasta  </h4>
+                    </div>            
+                </article>     
+                <article class="recipe-matrix">
+                    <figure class="recipe-image_box">
+                        <img class="recipe-image" src="RecipeYoghurtCilantroSauce.jpg" style="width:200px;height:120px">
+                    </figure>
+                    <div class="recipe-name_box">
+                        <h4>Yoghurt Cilantro for Dips or Prata </h4>
+                        <p class="recipe-name_notes">Greek Yoghurt add Honey + Lemon + Cumin Powder + Cilatro (chopped finely) + Garlic (chopped finely)</p>
+                    </div>            
+                </article>               
+            </div>              
+        </div>
+    </div>
+
+    <div class="page-footer">
+        <p>Copyright @ 2023 Hope Pte Ltd</p>
+    </div>
+</body>
+</html>
+
