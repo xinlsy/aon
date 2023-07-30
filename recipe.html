@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xin-Recipes</title>
     <link rel="stylesheet" href="design.css">
-    <link rel="icon" href="LogoTab.jpg">
+    <link rel="icon" href="Image/LogoTab.jpg">
     <script src="action.js"></script>
 </head>
 
@@ -25,6 +25,11 @@
             <div class="ingredient-box" style="cursor: pointer;" onclick="showRecipe('radish')">Radish</div>
             <div class="ingredient-box" style="cursor: pointer;" onclick="showRecipe('spring_onion')">Spring Onion</div>
             <div class="ingredient-box" style="cursor: pointer;" onclick="showRecipe('yoghurt')">Yoghurt</div>
+            <div class="ingredient-box" style="cursor: pointer;" onclick="showRecipe('tofu')">Tofu/TawKua</div>
+            <div class="ingredient-box" style="cursor: pointer;" onclick="showRecipe('mushroom')">Mushroom</div>
+            <div class="ingredient-box" style="cursor: pointer;" onclick="showRecipe('fruits')">Fruits</div>
+            <div class="ingredient-box" style="cursor: pointer;" onclick="showRecipe('condiments')">Condiments</div>
+            <div class="ingredient-box" style="cursor: pointer;" onclick="showRecipe('Baking')">Baking</div>
         </div>
 
         <div class="sect4-recipe">
@@ -32,7 +37,8 @@
             <div id="radish" class="recipe_content">
                 <article class="recipe-matrix">
                     <figure class="recipe-image_box">
-                        <a href=https://www.youtube.com/watch?v=biRXo9Gq87A&list=LL&index=1><img class="recipe-image" src="RecipeRadishCake.jpg" style="width:200px;height:100px"></a>
+                        <a href=https://www.youtube.com/watch?v=biRXo9Gq87A&list=LL&index=1 target="_blank">
+                            <img class="recipe-image" src="Image/RecipeRadishCake.jpg" style="width:200px;height:100px"></a>
                     </figure>
                     <div class="recipe-name_box">
                         <h4>Radish Cake (萝卜糕)</h4>
@@ -41,7 +47,7 @@
                 </article>
                 <article class="recipe-matrix">
                     <figure class="recipe-image_box">
-                        <img class="recipe-image" src="RecipeRadishKimchi.jpg" style="width:200px;height:100px">
+                        <img class="recipe-image" src="Image/RecipeRadishKimchi.jpg" style="width:200px;height:100px">
                     </figure>
                     <div class="recipe-name_box">
                         <h4>Kimchi</h4>
@@ -52,19 +58,41 @@
             <div id="spring_onion" class="recipe_content">
                 <article class="recipe-matrix">
                     <figure class="recipe-image_box">
-                        <a href=https://redhousespice.com/spring-onion-pancake/><img class="recipe-image" src="RecipeSpringOnionPancake.jpg" style="width:200px;height:120px"></a>
+                        <a href=https://redhousespice.com/spring-onion-pancake/ target="_blank">
+                            <img class="recipe-image" src="Image/RecipeSpringOnionPancake.jpg" style="width:200px;height:120px"></a>
                     </figure>
                     <div class="recipe-name_box">
                         <h4>Scallion Pancake (葱油饼) </h4>
                         <p class="recipe-name_notes">Roll tightly so that oil does not ooze out when flattening it flat</p>
-                    </div>            
+                    </div>
                 </article>
+                <div>
+                    <!-- QN : How to do href to a page that is only shown when 'tofu' is clicked ??-->
+                    <h3>Related Recipes</h3>
+                    <div class="recipe-body_outer_box">           
+                        <div class="recipe-matrix">
+                            <article>
+                                <figure class="recipe-matrix_image_box">
+                                    <img src="Image/RecipeTofuCheesePancake.jpg" style="width:200px;height:120px"></figure>
+                                <div class="excerpt_title"> Tofu Cheese Pancake</div>
+                            </article>
+                        </div>
+                        <div class="recipe-matrix">
+                            <article>
+                                <figure class="recipe-matrix_image_box">
+                                        <img src="Image/RecipeTofuPancake.jpg" style="width: 200px;height: 120px;"></img></figure>
+                                <div class="excerpt_title"> Tofu Pancake</div>
+                            </article>
+                        </div>                
+                    </div> 
+                </div>
             </div> 
 
             <div id="yoghurt" class="recipe_content">
                 <article class="recipe-matrix">
                     <figure class="recipe-image_box">
-                        <a href=https://lovefoodies.com/creamy-chicken-stroganoff/><img class="recipe-image" src="RecipeYoghurtCreamySauce.jpg" style="width:200px;height:120px"></a>
+                        <a href=https://lovefoodies.com/creamy-chicken-stroganoff/ target="_blank">
+                            <img class="recipe-image" src="Image/RecipeYoghurtCreamySauce.jpg" style="width:200px;height:120px"></a>
                     </figure>
                     <div class="recipe-name_box">
                         <h4>Creamy sauce for chicken </h4>
@@ -72,7 +100,8 @@
                 </article>
                 <article class="recipe-matrix">
                     <figure class="recipe-image_box">
-                        <a href=https://www.lecremedelacrumb.com/greek-yogurt-alfredo-sauce/><img class="recipe-image" src="RecipeYoghurtAlfredoSauce.jpg" style="width:200px;height:160px"></a>
+                        <a href=https://www.lecremedelacrumb.com/greek-yogurt-alfredo-sauce/ target="_blank">
+                            <img class="recipe-image" src="Image/RecipeYoghurtAlfredoSauce.jpg" style="width:200px;height:160px"></a>
                     </figure>
                     <div class="recipe-name_box">
                         <h4>Alfredo sauce for Pasta  </h4>
@@ -80,20 +109,121 @@
                 </article>     
                 <article class="recipe-matrix">
                     <figure class="recipe-image_box">
-                        <img class="recipe-image" src="RecipeYoghurtCilantroSauce.jpg" style="width:200px;height:120px">
+                        <img class="recipe-image" src="Image/RecipeYoghurtCilantroSauce.jpg" style="width:200px;height:120px">
                     </figure>
                     <div class="recipe-name_box">
                         <h4>Yoghurt Cilantro for Dips or Prata </h4>
-                        <p class="recipe-name_notes">Greek Yoghurt add Honey + Lemon + Cumin Powder + Cilatro (chopped finely) + Garlic (chopped finely)</p>
+                        <p class="recipe-name_notes">Greek Yoghurt add Honey + Lemon + Cumin Powder + Garlic Powder + Cilatro (chopped finely)</p>
                     </div>            
                 </article>               
-            </div>              
-        </div>
-    </div>
+            </div>    
 
+            <div id="tofu" class="recipe_content">
+                <article class="recipe-matrix">
+                    <figure class="recipe-image_box">
+                        <a href=https://www.youtube.com/watch?v=weM5P2vfhrU&list=PL1S5rpN7-wMuAf7VRWaPAuKZMRtUmy7ku&index=3 target="_blank">
+                            <img class="recipe-image" src="Image/RecipeTofuGarlicSauce.jpg" style="width:200px;height:120px"></a>
+                    </figure>
+                    <div class="recipe-name_box">
+                        <h4>Tofu w/Garlic Sauce </h4>
+                    </div>            
+                </article>
+                <article class="recipe-matrix">
+                    <figure class="recipe-image_box">
+                        <a href=https://www.youtube.com/watch?v=mbBlIj0NaSU&list=PL1S5rpN7-wMuAf7VRWaPAuKZMRtUmy7ku&index=17&start=372 target="_blank">
+                            <img class="recipe-image" src="Image/RecipeTofuEggSoup.jpg" style="width:200px;height:120px"></a>
+                    </figure>
+                    <div class="recipe-name_box">
+                        <h4>Tofu Egg Soup  </h4>
+                    </div>            
+                </article>     
+                <article class="recipe-matrix">
+                    <figure class="recipe-image_box">
+                        <a href=https://www.youtube.com/watch?v=mbBlIj0NaSU&list=PL1S5rpN7-wMuAf7VRWaPAuKZMRtUmy7ku&index=17&start=443 target="_blank">
+                            <img class="recipe-image" src="Image/RecipeTofuCheesePancake.jpg" style="width:200px;height:120px"></a>
+                    </figure>
+                    <div class="recipe-name_box">
+                        <h4>Tofu Cheese Pancake </h4>
+                    </div>            
+                </article>               
+                <article class="recipe-matrix">
+                    <figure class="recipe-image_box">
+                        <a href=https://www.youtube.com/watch?v=mbBlIj0NaSU&list=PL1S5rpN7-wMuAf7VRWaPAuKZMRtUmy7ku&index=17&start=901 target="_blank">
+                            <img class="recipe-image" src="Image/RecipeTofuPancake.jpg" style="width:200px;height:120px"></a>
+                    </figure>
+                    <div class="recipe-name_box">
+                        <h4>Tofu Pancake </h4>
+                        <p class="recipe-name_notes">Same ingredients as 'Tofu Cheese Pancake' but without the cheese</p>
+                    </div>            
+                </article>               
+                <article class="recipe-matrix">
+                    <figure class="recipe-image_box">
+                        <a href=https://www.youtube.com/watch?v=AjecKJVGSrY&list=PL1S5rpN7-wMuAf7VRWaPAuKZMRtUmy7ku&index=2&start=174 target="_blank">
+                            <img class="recipe-image" src="Image/RecipeTofuGingerSesame.jpg" style="width:200px;height:120px"></a>
+                    </figure>
+                    <div class="recipe-name_box">
+                        <h4>Ginger Sesame Tofu </h4>
+                    </div>            
+                </article>               
+                <article class="recipe-matrix">
+                    <figure class="recipe-image_box">
+                        <a href=https://www.youtube.com/watch?v=BS9pPhBAoLo&list=PL1S5rpN7-wMuAf7VRWaPAuKZMRtUmy7ku&index=7 target="_blank">
+                            <img class="recipe-image" src="Image/RecipeTofuCrispy.jpg" style="width:200px;height:120px"></a>
+                    </figure>
+                    <div class="recipe-name_box">
+                        <h4>Crispy Tofu </h4>
+                    </div>            
+                </article>               
+            </div>
+            
+            <div id="condiments" class="recipe_content">
+                <article class="recipe-matrix">
+                    <figure class="recipe-image_box">
+                        <a href=https://www.tiktok.com/@zerowastecartel/video/7254592462428048658?q=zerowaste&t=1690697126963 target="_blank">
+                            <img class="recipe-image" src="Image/RecipeGingerOrangeShots.jpg" style="width:150px;height:120px"></a>
+                    </figure>
+                    <div class="recipe-name_box">
+                        <h4>Orange Ginger Shots </h4>
+                    </div>            
+                </article>
+                <article class="recipe-matrix">
+                    <figure class="recipe-image_box">
+                        <a href=https://www.tiktok.com/@zerowastecartel/video/7256084841718910215 target="_blank">
+                            <img class="recipe-image" src="Image/RecipeGingerTea.jpg" style="width:180px;height:160px"></a>
+                    </figure>
+                    <div class="recipe-name_box">
+                        <h4>Ginger Tea  </h4>
+                        <p class="recipe-name_notes"> Using leftover pulp from the 'Orange Ginger Shots' </p>
+                    </div>            
+                </article>     
+                <div>
+                    <!-- QN : How to do href to a page that is only shown when 'tofu' is clicked ??-->
+                    <h3>Related Recipes</h3>
+                    <div class="recipe-body_outer_box">           
+                        <div class="recipe-matrix">
+                            <article>
+                                <figure class="recipe-matrix_image_box">
+                                    <img src="Image/RecipeTofuGingerSesame.jpg" style="width:200px;height:120px"></figure>
+                                <div class="excerpt_title"> Ginger Seasame Tofu</div>
+                            </article>
+                        </div>
+                        <div class="recipe-matrix">
+                            <article>
+                                <figure class="recipe-matrix_image_box">
+                                        <img src="Image/Recipe.jpg" style="width: 200px;height: 120px;"></img></figure>
+                                <div class="excerpt_title"> ??</div>
+                            </article>
+                        </div>                
+                    </div> 
+                </div>           
+            </div>    
+        </div>
+
+    </div>
     <div class="page-footer">
         <p>Copyright @ 2023 Hope Pte Ltd</p>
     </div>
+
 </body>
 </html>
 
